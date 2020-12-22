@@ -1,14 +1,29 @@
-# biovoice
-タンパク質のアミノ酸配列を読み取りそれに合わせた音を出します、【それぞれのタンパク質の音を聞いてみよう】というアプリです。
-実行環境
-biopython	1.78
+# biovoice【タンパク質の音を聞いてみよう】
+タンパク質のアミノ酸配列を読み取りそれに合わせた音を出します
+
+実行環境  
+biopython	1.78  
 numpy	1.19.3
 
-実行時にはパスを通す。あらかじめfastaファイルをbiovoice.pyと同じディレクトリに入れる。
-$ python biovoice.py (読みたいタンパク質).fastaで実行
+実行時にはパスを通す。  
+あらかじめfastaファイルをbiovoice.pyと同じディレクトリに入れる。
+
+$ python biovoice.py (読みたいタンパク質).fasta  
+で実行できます
+
+今回サンプルとして読み取るのは p53(チャイニーズハムスター由来）というタンパク質です。  
+p53はがん抑制遺伝子として良く知られ、  
+DNAの修復、細胞周期の調節、アポトーシスの促進に大きく関与するといわれています。
+
+![AAC.fasta](C:\Users\white\PycharmProjects\pythonProject\biovoice_AAC.png "sample")
+NCBIのここのサイトからダウンロード出来ます。
+https://www.ncbi.nlm.nih.gov/protein/AAC53040.1
 
 
+実行すると次の感じになります。
+![jikkou](C:\Users\white\PycharmProjects\pythonProject\biovoice_jikkou.png "sample")
 
+実行した際の音も聞ききたいときは、movieを見てください。
 
 ----------------------------------------------------------------------------------------------------------------------------
 ここから、メモ↓
